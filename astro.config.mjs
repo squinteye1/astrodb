@@ -7,10 +7,12 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
-  output: 'server',
+  site: "https://squinteye1.github.io",
+  base: "astrodb",
+ 
+  output: "server",
   integrations: [mdx(), sitemap(), db()],
   adapter: node({
-    mode: "standalone"
-  })
+    mode: "standalone",
+  }),
 });
